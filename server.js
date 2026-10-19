@@ -6,7 +6,7 @@ require("dotenv").config();
 
 const app = express();
 app.use(cors({
-    origin: "https://YOUR-GITHUB-USERNAME.github.io"
+    origin: "https://jacksonbirdwater.github.io"
 }));
 const PORT = process.env.PORT || 3000;
 
