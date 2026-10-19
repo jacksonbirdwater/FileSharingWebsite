@@ -1,10 +1,13 @@
 const express = require('express');
 const path = require('path');
-
+const cors = require("cors");
 const multer = require("multer");
 require("dotenv").config();
 
 const app = express();
+app.use(cors({
+    origin: "https://YOUR-GITHUB-USERNAME.github.io"
+}));
 const PORT = process.env.PORT || 3000;
 
 const upload = multer({

@@ -15,7 +15,7 @@ uploadForm.addEventListener("submit", async function (event) {
     formData.append("file", selectedFile);
 
     try {
-        const response = await fetch("https://YOUR-BACKEND-URL/upload", {
+        const response = await fetch("https://filesharingwebsite.onrender.com/upload", {
             method: "POST",
             body: formData
         });
