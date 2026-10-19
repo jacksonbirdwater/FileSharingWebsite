@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>File Port</title>
+        <link rel ="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <header class="homepage-header">
+            <h1>File Port</h1>
+        </header>
+
+        <main>
+            <section class="file-upload-section">
+                <h2>Upload a File</h2>
+                <form id="file-upload-form" action="/upload" method="POST" enctype="multipart/form-data">
+                    <input type="file" name="file" required>
+                    <button type="submit">Upload</button>
+                </form>
+                
+                <div id="upload-result" hidden>
+                    <h3>Your file is ready!</h3>
+
+                    <label for="share-link">Shareable link</label>
+                    <input type="text" id="share-link" readonly>
+
+                    <button type="button" id="copy-link-button">
+                        Copy link
+                    </button>
+                </div>
+
+            </section>
+
+            <section class="upload-info">
+                <h3>Simple, fast file sharing</h3>
+                <p>
+                    Upload a file and get a shareable link in seconds.
+                    Send the link to anyone who needs access to your file.
+                </p>
+
+                <div class="upload-limits">
+                    <div>
+                        <strong>50 MB</strong>
+                        <span>Maximum file size</span>
+                    </div>
+
+                    <div>
+                        <strong>Quick & easy</strong>
+                        <span>No account needed on this website</span>
+                    </div>
+
+                    <div>
+                        <strong>Temporary</strong>
+                        <span>Files follow the hosting provider's retention rules</span>
+                    </div>
+                </div>
+            </section>
+
+
+        </main>
+
+        
+        <footer class="site-footer">
+            <p>
+                File hosting powered by
+                <a href="https://postfile.net/"
+                target="_blank"
+                rel="noopener noreferrer">PostFile</a>.
+            </p>
+        </footer>
+
+        <script src="script.js"></script>
+    </body>
+</html>
